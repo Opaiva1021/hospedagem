@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    background: #03002a;
+}
+header{
+    padding: none;
+    width: 100%;
+    height: calc(90vh - 30px);
+    background-image: url("./img/ads.png");
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position: 700px;
+    display: block;
+  }
+.box{
+    width: 700px;
+    height: 320px;
+	font-family: "Electrolize", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    font-size: 40px;
+    text-align: left; 
+	padding: 150px 180px;
+	color: rgb(238, 238, 238);
+	margin: 0 auto;
+    position:absolute;
+  }
+#ADS{
+        font-size: 45px;
+}
+#bpk{
+        font-size: 30px;
+        padding: 10px 0px 20px 0px;
+}
+  .logo{
+    padding: 5px;
+	display: flex; 
+    align-content: start;
+    position: fixed;
+    margin: 10px;
+  }
+
+  .selo{
+    display: flex;
+    margin: 10px 10px 10px 90%;
+  }
+
+  nav ul li{
+	list-style-type: none;
+	display: inline;
+	padding: 15px;
+}
+nav{
+	text-align: center;
+    padding: 15px;
+}
+.button {
+	box-shadow:inset 0px 0px 26px 6px #940303;
+	background-color:#940303;
+	border-radius:42px;
+	border:3px solid 940303;
+	display:inline-block;
+	cursor:pointer;
+	font-size:20px;
+	font-style:italic;
+	padding:12px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ba3737;
+	font-family: "Electrolize", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgb(238, 238, 238);
+	transition: all 150ms ease-in-out;
+
+}
+.button:hover {
+		background-color:transparent;
+		box-shadow: 0 0 10px 0 #940303 inset, 0 0 15px 4px #940303;
+		border:5px solid #940303;
+}
+.button:active {
+		position:relative;
+		top:1px;
+}
+.Home{
+    background-color: #05013e;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    text-align: center;
+}
+h3,h4{
+    margin-top: 15px;
+	padding: 10px;
+	padding-bottom: 0px;
+    font-size: 30px;
+	color: #eeeeee;
+	font-family: "Electrolize", sans-serif;
+	font-weight: 400;
+	font-style:normal;
+    text-align: center;
+}
+main section p{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    font-size: 20px;
+	color: aliceblue;
+	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+    text-align: center;
+}
+.bpkedu{
+    width: 800px;
+    height: 520px;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+footer{
+	background: #08022f;
+	padding: 0;
+	margin: 0px;
+    text-align: center;
+}
+iframe{
+	width: 300px;
+	height: 150px;
+    align-items: center;
+}
+aside{
+    width: 300px;
+    height: 150px;
+    align-items: center;
+}
+h6{
+	color: #f0f8ff;
+	padding: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    text-align: center;
+    display: inline-block;
+	font-family: "Electrolize", sans-serif;
+	font-weight: 400;
+    font-size: 16px;
+	font-style:normal;
+    width: 60%;
+}
+/*PROJETOS*/
+#Projetos{
+    display: grid;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    justify-content: center;
+
+    border-radius: 10px;
+    text-align: center;
+}
+.slider2{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+.navigation-bar{
+    display: flex;
+    position: relative;
+    bottom: 35px;
+    left: 90%;
+    transform: translate(-50%);
+}
+
+input{
+    display: none;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #fff;
+    transition: 0.4s;
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+.slides2{
+    display: flex;
+    width: 100%;
+    height: 300%;
+}
+
+.slide{
+    width: 33.33%;
+    transition: 0.5s;
+}
+.slide2 img{
+    width: 700px;
+    height: 500px;
+    border-radius: 25px;
+}
+.slide img{
+    width: 370px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -33.333%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -66.66%;
+}
+/*DOCENTES*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    padding: 100px;
+    box-sizing: border-box;
+    background-color:  #08022f;
+    color: aliceblue;
+}
+th, td {
+    padding: 30px;
+    text-align: center;
+    vertical-align: top;
+}
+img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.circular-img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    border: 5px solid #333; 
+    object-fit: cover; 
+}
+
+
+/*Pagina de Extenção, estou ultilizando alguns elementos da pagina inicial como os botoes e body back-gruond👍*/
+.tituloESeletion{
+	background-color: #05013e;
+	padding: 20px;
+	background-image: linear-gradient(to bottom,#07024e, #03002a );
+}
+#tituloExtencoes{
+	color: aliceblue;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Electrolize", sans-serif;
+    font-weight: bold;
+}
+.logo2{
+    padding: 5px;
+	display: flex; 
+    align-content: start;
+    position: absolute;
+    margin: 10px;
+}
+#hackathon{
+	color: aliceblue;
+	position: relative;
+	top: 50px;
+	left: 70px;
+	font-size: 30px;
+	font-family: "Electrolize", sans-serif;
+    font-weight: bold;
+}
+#hackathonTexto{
+	color: aliceblue;
+	position: relative;
+	width: 60%;
+	top: 70px;
+	left: 70px;
+	font-size: 17px;
+    font-style: normal;
+	font-family: "Electrolize", sans-serif;
+    text-align: left;
+}
+#imagemhack{
+    position: absolute;
+    top: 200px;
+    left: 1175px;
+    width: 250px;
+}
+
+/* EMENTA */
+
+ol{
+    list-style: none;
+}
+li{
+    padding: 2px;
+    list-style: none;
+}
+
+.TituloEmenta{
+    text-align: center;
+    color: aliceblue;
+    padding: 15px;
+    font-size: 40px;
+    font-style: normal;
+	font-family: "Electrolize", sans-serif;
+
+}
+
+.SubtituloEmenta{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 17px;
+    font-style: normal;
+	font-family: "Electrolize", sans-serif;
+}
+
+.caixa {
+    width: 80%;
+    background-color: #940303;
+    border: 3px solid #940303;
+    border-radius: 2px;
+    padding: 1px;
+    margin: 20px auto;
+}
+
+.titulo {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 15px;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: aliceblue;
+}
+
+.informacoes {
+    display: none;
+    color: aliceblue;
+    background-color: rgb(8, 2, 47);
+    border: 1px solid #940303;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-checkbox:checked + .titulo .mais::after {
+    content: "-";
+}
+
+.toggle-checkbox:checked + .titulo + .informacoes {
+    display: block;
+}
+
+.mais::after {
+    content: "+";
+    color: aliceblue;
+}
+
+/* REGULAMENTOS */
+
+h2{
+    padding: 25px;
+}
+
+.TituloRegulamento{
+    text-align: center;
+    color: aliceblue;
+    padding: 15px;
+    font-size: 40px;
+    font-style: normal;
+	font-family: "Electrolize", sans-serif;
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.colunaA{
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #03002a;
+    color: aliceblue;
+}
+
+.colunaB{
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:  #08022f;
+    color: aliceblue;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+
+.box {
+    width: 100%;
+    padding: 100px 50px;
+    font-size: 30px;
+}
+
+#imagemhack {
+    position: static;
+    margin: 20px auto;
+}
+
+}
+
+@media (max-width: 768px) {
+
+header{
+    width: 100%;
+    background-size: 600px;
+    background-image: url(./ads.png);
+    background-repeat: no-repeat;
+    background-position: -10px;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.colunaA, .colunaB {
+    width: 100%;
+}
+
+.Home {
+    padding: 20px;
+}
+
+.box {
+    padding: 50px 20px;
+    font-size: 25px;
+}
+
+#hackathon, #hackathonTexto {
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+}
+
+@media (max-width: 480px) {
+
+header{
+    width: 100%;
+    background-size: 430px;
+    background-image: url(./ads.png);
+    background-repeat: no-repeat;
+    background-position: 10px 30px;
+}
+
+.selo{
+    display: flex;
+    margin: 10px 10px 10px 75%;
+    width: 90px;
+    height: 90px;
+}
+
+nav ul li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    padding: 10px;
+}
+
+#ADS{
+    font-size: 40px;
+    text-align: left;
+    padding: 55px 0px 20px 0px;
+}
+#bpk{
+    font-size: 25px;
+    padding: 10px 0px 20px 0px;
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.box {
+    padding: 20px;
+    font-size: 20px;
+}
+
+#tituloExtencoes {
+    font-size: 30px;
+}
+
+.TituloEmenta, .TituloRegulamento {
+    font-size: 30px;
+}
+
+.SubtituloEmenta {
+    font-size: 15px;
+}
+
+#hackathon {
+    font-size: 25px;
+}
+
+#hackathonTexto {
+    font-size: 15px;
+}
+
+iframe, aside {
+    width: 100%;
+}
+
+.caixa {
+    width: 90%;
+}
+
+.titulo {
+    font-size: 25px;
+}
+
+.informacoes {
+    font-size: 14px;
+}
+
+}
+/*Estensoes*/
+#Extensoes{
+    background-color: #08022f;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    text-align: center;
+}
+#tituloExtencoes{
+	color: aliceblue;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Electrolize", sans-serif;
+    font-weight: bold;
+}
+#hackathon{
+	color: aliceblue;
+	position: relative;
+	top: 50px;
+	left: 70px;
+	font-size: 30px;
+	font-family: "Electrolize", sans-serif;
+    font-weight: bold;
+}
+#hackathonTexto{
+	color: aliceblue;
+	position: relative;
+	width: 60%;
+	top: 100px;
+	left: 70px;
+	font-size: 20px;
+    font-style: normal;
+	font-family: "Atkinson Hyperlegible", sans-serif;
+    text-align: left;
+    margin-top: 20px
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    height: 400px; 
+    overflow: hidden;
+    border: 2px solid aliceblue;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    margin-top: -110px;
+    margin-left: auto;
+}
+
+.carousel {
+    display: flex;
+    width: calc(450px * 13);
+    height: 100%;
+    animation: slide 91s infinite;
+}
+
+.carousel-item {
+    width: 450px;
+    height: auto;
+    flex: none;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes slide {
+    0%, 7% { transform: translateX(0); }
+    7%, 14% { transform: translateX(-450px); }
+    14%, 21% { transform: translateX(-900px); }
+    21%, 28% { transform: translateX(-1350px); }
+    28%, 35% { transform: translateX(-1800px); }
+    35%, 42% { transform: translateX(-2250px); }
+    42%, 49% { transform: translateX(-2700px); }
+    49%, 56% { transform: translateX(-3150px); }
+    56%, 63% { transform: translateX(-3600px); }
+    63%, 70% { transform: translateX(-4050px); }
+    70%, 77% { transform: translateX(-4500px); } 
+    77%, 84% { transform: translateX(-4950px); }
+    84%, 91% { transform: translateX(-5400px); }
+    91%, 100% { transform: translateX(-5850px); }
+}
